@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Aniversário!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&family=Bebas+Neue&family=Zen+Antique+Soft&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Tela inicial -->
+  <div class="intro-screen" id="introScreen">
+    <div class="intro-title">Clica aqui vai :3</div>
+    <button class="start-button" onclick="iniciarSite()">Clique</button>
+  </div>
+
+  <header>
+    <div class="titulo-principal">FELIZ ANIVERSÁRIO!</div>
+    <div class="subtitulo">Hoje é um grande dia para uma grande pessoa.</div>
+  </header>
+
+  <!-- Carrossel de Fotos -->
+  <div class="carousel-container">
+    <div class="carousel-wrapper">
+      <button class="carousel-btn prev" onclick="changeSlide(-1)">◀</button>
+      <div class="carousel-slide">
+        <img id="carouselImage" src="foto1.jpg" alt="Foto especial">
+        <div class="carousel-caption" id="carouselCaption">Momentos</div>
+      </div>
+      <button class="carousel-btn next" onclick="changeSlide(1)">▶</button>
+    </div>
+    <div class="carousel-indicators" id="carouselIndicators"></div>
+  </div>
+
+  <div class="hero-section">
+    <div class="viking-quote">"Fios do Destino"</div>
+    <p style="font-size: 1.1em; line-height: 1.7;">
+      Os encontros mais importantes da vida não acontecem por acaso; assim como no céu estrelas se cruzam por um instante, cada passo, cada escolha, é um fio invisível que nos guia. A verdadeira força está em viver plenamente o agora, porque até o gesto mais simples pode mudar um destino inteiro.
+    </p>
+  </div>
+
+  <!-- Player de Música -->
+  <div class="music-player">
+    <div class="player-header">
+      <span class="player-icon">🎵</span>
+      <span class="player-title">Musica de Macho</span>
+    </div>
+    <div class="player-info">
+      <div id="currentSong">Carregando...</div>
+      <div class="player-controls">
+        <button onclick="previousSong()" class="control-btn">⏮️</button>
+        <button onclick="togglePlay()" class="control-btn play-btn" id="playBtn">▶️</button>
+        <button onclick="nextSong()" class="control-btn">⏭️</button>
+      </div>
+      <audio id="audioPlayer" loop></audio>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </div>
+    <div class="playlist">
+      <div class="playlist-title">📜 PLAYLIST</div>
+      <div id="playlistContainer"></div>
+    </div>
+  </div>
+
+  <div class="mensagem">
+    Parabéns, mano hoje é o teu dia e não é só sobre fazer aniversário, mas também sobre reconhecer a pessoa incrível que você é, Sei que você já passou  e ainda passa por momentos difíceis, mas sempre dá um jeito de se levantar e seguir firme.
+
+    No folclore japonês, tem a história da carpa que nada contra a correnteza até virar um dragão. E eu vejo muito disso em você, mesmo quando as coisas ficam pesadas, você continua insistindo e acaba conquistando algo maior.
+
+    Que esse novo ciclo venha cheio de conquistas, superações e muitos motivos pra sorrir. Você inspira não só pelo que alcança, mas pela forma como enfrenta cada batalha.
+  </div>
+
+  <div class="final-message">
+    <strong>Mensagem de macho:</strong><br><br>
+   A vida não é feita só de vitórias fáceis. Assim como o Naruto, você vai cair muitas vezes, ser rejeitado, sentir que o mundo não te entende. Mas é justamente nesses momentos que você descobre a sua verdadeira força a força de levantar, acreditar em si mesmo e nunca desistir.
+
+  Às vezes, como em Your Name, pode parecer que tudo está distante, desconectado, que seus sonhos e sua realidade não se encontram. Mas se você continuar acreditando, dando um passo de cada vez, mesmo que pequeno, você vai perceber que cada esforço é como um fio invisível ligando você ao que deseja.
+
+  E como em Castelo Animado, a vida pode ser cheia de transformações e caminhos inesperados. Pode até parecer que você perdeu o controle, mas é justamente na jornada, enfrentando as tempestades e descobrindo quem realmente caminha ao seu lado, que você encontra a magia de seguir em frente.
+
+  A vida não é sobre o quão forte você pode bater, mas sobre o quanto você aguenta apanhar e continuar avançando. Então, não importa quantas vezes caia: se levante, siga em frente, e lembre-se de que sua história está apenas começando.
+    <br><br>
+    <span style="font-size: 1.3em; color: #ff6b81;">
+      FELIZ ANIVERSÁRIO!
+    </span>
+  </div>
+
+  <footer>
+    comi o cu de quem ta lendo <3🚀
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
